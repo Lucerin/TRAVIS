@@ -1,18 +1,13 @@
-
-
 language: python
 python:
-- "2.7"
-
+    - "2.7"
 install: "pip install -r requirements.txt"
-
 before_script:
--autopep8 -ir *
--flake8 --maxcomplexity=3 --exclude=*.txt,*.md --max-line-length=200 *
-
+    -autopep8 -ir *
+    -flake8 --maxcomplexity=3 --exclude=*.txt,*.md --max-line-length=200 *
 script:
--lettuce Aceptancelest
--cd UnitTest
--python TestFiguras.py -v
--coverage run --branch TestFiguras.py
--coverage report -m
+    -lettuce Aceptancelest
+    -cd UnitTest
+    -python TestFiguras.py -v
+    -coverage run --branch TestFiguras.py
+    -coverage report -m
