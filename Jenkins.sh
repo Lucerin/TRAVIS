@@ -1,8 +1,8 @@
 #! /bin/sh
 
 pip install -r requerimientos.txt
-autopep8 -ir .
-flake8 --max-complexity=5 --exclude=*.txt,.gitignore --max-line-length=200 .
+autopep8 -ir *
+flake8 --max-complexity=5 --exclude=*.txt,.gitignore --max-line-length=200 *
 lettuce Calculadora
 cd CalculadoraUnitTest
 python TestCalcultor.py
