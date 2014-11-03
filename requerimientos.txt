@@ -3,4 +3,4 @@ pep8
 autopep8
 mccabe 
 coverage
-letuce
+lettuce
