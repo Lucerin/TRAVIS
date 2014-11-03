@@ -8,4 +8,4 @@ cd CalculadoraUnitTest
 python TestCalcultor.py
 coverage run --branch TestCalcultor.py 
 coverage report -m 
-coverage html -title="cobertura del codigo mayor" 
+coverage html --title="cobertura del codigo mayor" 
