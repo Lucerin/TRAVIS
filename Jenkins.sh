@@ -4,7 +4,7 @@ pip install -r requerimientos.txt
 autopep8 -ir *
 flake8 --max-complexity=5 --exclude=*.txt,.gitignore *
 lettuce Calculadora
-cd calculadoraUnitTest
+cd CalculadoraUnitTest
 python TestCalcultor.py
 coverage run --branch TestCalcultor.py 
 coverage report -m 
